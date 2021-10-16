@@ -1,0 +1,29 @@
+<div class="card shadow-sm">
+    <img class="bd-placeholder-img card-img-top" width="100%" src="https://www.rubiks.com/media/catalog/product/cache/9c57e2fe71f8a58f6afba681a0a15dd4/r/u/rubik-5x5-cube-twisted.jpg"/>
+
+
+
+
+
+    <div class="card-body">
+        <p class="card-text">
+            <strong>
+                {{ productItem.price | currency:'INR'}}
+            </strong>
+        </p>
+      <p class="card-text">
+        {{productItem.description}}
+      </p>
+      <p class="card-text">
+        {{productItem.name}}
+      </p>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <!-- <button  type="button"  class="btn btn-sm btn-outline-primary product-btn" click()='handleAddToCart()'>Add To Cart</button> -->
+          <button (click)="handleAddToCart()" class="btn btn-sm btn-outline-primary product-btn" >Add To Cart</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary product-btn">View Details</button>
+        </div>&nbsp;
+        <!-- <small class="text-muted">9 mins</small> -->
+      </div>
+    </div>
